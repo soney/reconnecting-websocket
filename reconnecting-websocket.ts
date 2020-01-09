@@ -24,9 +24,9 @@ const getGlobalWebSocket = (): WebSocket | undefined => {
  */
 const isWebSocket = (w: any) => typeof w !== 'undefined' && !!w && w.CLOSING === 2;
 
-export type Event = Event;
-export type ErrorEvent = ErrorEvent;
-export type CloseEvent = CloseEvent;
+// export type Event = Event;
+// export type ErrorEvent = ErrorEvent;
+// export type CloseEvent = CloseEvent;
 
 export type Options = {
     WebSocket?: any;
@@ -335,7 +335,7 @@ export default class ReconnectingWebSocket {
             if (typeof url === 'string') {
                 return Promise.resolve(url);
             }
-            if (url.then) {
+            if (url.then as any) {
                 return url;
             }
         }
