@@ -28,7 +28,7 @@
     ],
     "author": "Pedro Ladaria <pedro.ladaria@gmail.com>",
     "license": "MIT",
-    "devDependencies": {
+    "dependencies": {
         "ava": "^2.4.0",
         "coveralls": "^3.0.9",
         "del-cli": "^3.0.0",
@@ -45,7 +45,6 @@
         "uglify-es": "^3.3.9",
         "ws": "^7.2.1"
     },
-    "dependencies": {},
     "directories": {
         "test": "test"
     },
